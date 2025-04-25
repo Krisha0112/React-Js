@@ -1,0 +1,77 @@
+{
+    "header": [
+        {
+            "logo": {
+                "image": "rnwmultimedia.edu.in/assets/img/photos/rnw-logo.png"
+            },
+            "header-details": [
+                "home",
+                {
+                    "std 10th & 12th": [
+                        "ITA-CS+",
+                        "Animation & VFX 2 year",
+                        "Business Administration Commerce"
+                    ]
+                }, 
+                {
+                    "career courses" : [
+                        {
+                            "designing" : [
+                                "Master in Graphic Design", 
+                                "Master in UI/UX & Graphic Design",
+                                "ui/ux design cource",
+                                "master in game design"
+                            ],
+                            "visualization" : [
+                                "master in animation",
+                                "animation & vfx 2 year "
+                            ],
+                            "coding & programing" : [
+                                "master in web designing",
+                                "master in front end developing",
+                                "master in web development",
+                                "master in android development",
+                                "master in ios development",
+                                "master in game development",
+                                "master in fluter",
+                                "advance in python",
+                                "full stack development"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "courses": [
+                        {
+                            "programing":[
+                                "java",
+                                "android",
+                                "ios",
+                                "react navigation",
+                                "react.js",
+                                "node.js",
+                                "php",
+                                "unity c# script",
+                                "angular js",
+                                "laraveel",
+                                "python"
+                            ],
+                            "graphic design" : [
+                                "photoshop",
+                                "iiilustrator",
+                                "figma",
+                                "corel draw",
+                                "after effects",
+                                "poster designing"
+                            ],
+                            "video editing" : [
+                                "video editing",
+                                "davinci resolve course"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
