@@ -1,28 +1,27 @@
 const category = [
-    { id: 1, name: 'mobile' },
-    { id: 2, name: 'electronics' },
-    { id: 3, name: 'appliances' },
-    { id: 4, name: 'furniture' },
-    { id: 5, name: 'clothing' }
-  ];
-  
-const products = [
-    { id: 1, name: 'vivo', category: 'mobile' },
-    { id: 2, name: 'samsung', category: 'mobile' },
-    { id: 3, name: 'tv', category: 'electronics' },
-    { id: 4, name: 'laptop', category: 'electronics' },
-    { id: 5, name: 'refrigerator', category: 'appliances' },
-    { id: 6, name: 'washing machine', category: 'appliances' },
-    { id: 7, name: 'sofa', category: 'furniture' },
-    { id: 8, name: 'dining table', category: 'furniture' },
-    { id: 9, name: 't-shirt', category: 'clothing' },
-    { id: 10, name: 'jeans', category: 'clothing' },
-    { id: 11, name: 'microwave', category: 'appliances' },
-    { id: 12, name: 'oneplus', category: 'mobile' },
-    { id: 13, name: 'headphones', category: 'electronics' },
-    { id: 14, name: 'bookshelf', category: 'furniture' },
-    { id: 15, name: 'hoodie', category: 'clothing' }
-  ];
-  
-export { category, products };
-  
+  { id: 1, name: 'Mobile' },
+  { id: 2, name: 'Electronics' },
+  { id: 3, name: 'Appliances' },
+  { id: 4, name: 'Furniture' },
+  { id: 5, name: 'Clothing' }
+];
+
+const product = [
+  { id: 1, name: 'Vivo', category: 'Mobile' },
+  { id: 2, name: 'Samsung', category: 'Mobile' },
+  { id: 3, name: 'Tv', category: 'Electronics' },
+  { id: 4, name: 'Laptop', category: 'Electronics' },
+  { id: 5, name: 'Refrigerator', category: 'Appliances' },
+  { id: 6, name: 'Washing Machine', category: 'Appliances' },
+  { id: 7, name: 'Sofa', category: 'Furniture' },
+  { id: 8, name: 'Dining Table', category: 'Furniture' },
+  { id: 9, name: 'T-shirt', category: 'Clothing' },
+  { id: 10, name: 'Jeans', category: 'Clothing' },
+  { id: 11, name: 'Microwave', category: 'Appliances' },
+  { id: 12, name: 'Oneplus', category: 'Mobile' },
+  { id: 13, name: 'Headphones', category: 'Electronics' },
+  { id: 14, name: 'Bookshelf', category: 'Furniture' },
+  { id: 15, name: 'Hoodie', category: 'Clothing' }
+];
+
+export { category, product };
