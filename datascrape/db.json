@@ -1,0 +1,38 @@
+{
+    "menu": [
+        {
+            "header": [
+                {
+                    "id": 1,
+                    "item": "home"
+                },
+                {
+                    "id": 2,
+                    "item": "about"
+                },
+                {
+                    "id": 3,
+                    "item": "contact"
+                },
+                {
+                    "id": 4,
+                    "item": "services"
+                }
+            ], 
+            "slider" : [
+                {
+                    "id" : 1,
+                    "item": "https://cms.landmarkshops.in/cdn-cgi/image/w=1232,q=85,fit=cover/MAX-Friday/MAX2.O/MAX-Uber-HP-Desktop-HeroBanner1-29APR25.png"
+                },
+                {
+                    "id": 2,
+                    "item": "https://cms.landmarkshops.in/cdn-cgi/image/w=1232,q=85,fit=cover/MAX-Friday/MAX2.O/MAX-Uber-HP-Desktop-HeroBanner4-25APR25.png"
+                }, 
+                {
+                    "id": 3,
+                    "item": "https://cms.landmarkshops.in/cdn-cgi/image/w=1232,q=85,fit=cover/MAX-Friday/MAX2.O/MAX-Uber-HP-Desktop-HeroBanner5-25APR25.png"
+                }
+            ]
+        }
+    ]
+}
