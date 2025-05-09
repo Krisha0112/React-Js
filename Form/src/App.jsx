@@ -8,7 +8,7 @@ function App() {
   })
 
   const handleChange = (e) => {
-    const { name, email } = e.target
+    const { name, value } = e.target
     const obj = {
       ...input,
       [name]: value
