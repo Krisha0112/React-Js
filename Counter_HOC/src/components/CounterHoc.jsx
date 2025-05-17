@@ -5,11 +5,13 @@ function CounterHoc(Wrappedcomponent) {
     return () => {
         const [no, setNo] = useState(0);
 
-        const [allusers , setAllUsers] = useState([
+        const [users, setUsers] = useState([
             { name:"John", phone: 1234658},
-            { name:"Jane", phine: 15843541},
+            { name:"Jane", phone: 15843541},
             { name:"Doe", phone : 5487451204},
         ])
+
+        const [allusers , setAllUsers] = useState([])
 
         const showusers = () => {
             setAllUsers(users)

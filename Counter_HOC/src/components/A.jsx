@@ -12,7 +12,7 @@ function componentA({cnt, incBtn, decBtn, showuserBtn, allusers}) {
       <hr />
       {
         allusers.length == 0? (
-            <p>Rcord is not found</p>
+            <p style={{color: "red"}}>Record is not found</p>
         ): (
             allusers.map((item, index) => {
                 return (
