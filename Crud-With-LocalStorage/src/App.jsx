@@ -1,10 +1,12 @@
-import Form from "./form/Form";
+import Form from "./form/Form"
+import './app.css'
+
 
 function App() {
 
   return (
     <>
-    <Form />
+    <Form/>
     </>
   )
 }
