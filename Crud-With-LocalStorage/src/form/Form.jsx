@@ -11,6 +11,8 @@ function Form() {
     city: ""
   })
 
+  const [editid, setEditId] = useState("")
+
   const [allrecord, setAllRecord] = useState(
     localStorage.getItem('users') ? JSON.parse(localStorage.getItem('users')) : []
   )
@@ -42,14 +44,35 @@ function Form() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("Form Submited");
 
-    let oldrecord = [...allrecord, formInput];
-    localStorage.setItem('users', JSON.stringify(oldrecord));
-    setAllRecord(oldrecord);
+    let obj = {
+      userid: Math.floor(Math.random() * 10000),
+      ...formInput
+    };
+    console.log(obj);
+
+
+    if (editid == "") {
+      let up = allrecord.map((val, i) => {
+        if (val.userid == editid) {
+          val.username = formInput.username;
+        }
+        return val;
+      })
+      console.log(up);
+    }
+    else {
+      let oldrecord = [...allrecord, obj];
+      // setAllRecord(oldrecord)
+      localStorage.setItem('users', JSON.stringify(oldrecord));
+      setAllRecord(oldrecord);
+    }
+
+
 
 
     setFormInput({
+      userid: "",
       username: "",
       useremail: "",
       userpassword: "",
@@ -67,6 +90,12 @@ function Form() {
     setAllRecord(deleterecord)
     localStorage.setItem('users', JSON.stringify(deleterecord))
     alert('record deleted')
+  }
+
+  const editUser = (id) => {
+    setEditId(id)
+    let singlerow = allrecord.find(val => val.userid == id)
+    setFormInput(singlerow)
   }
 
 
@@ -145,15 +174,16 @@ function Form() {
             {
               allrecord.map((val, index) => (
                 <tr key={index}>
-                  <td>{index + 1}</td>
+                  <td>{val.userid}</td>
                   <td>{val.username}</td>
                   <td>{val.useremail}</td>
                   <td>{val.userpassword}</td>
                   <td>{val.gender}</td>
-                  <td>{val.courses.join(", ")}</td>
+                  <td>{val.courses?.join(",")}</td>
                   <td>{val.city}</td>
                   <td>
                     <button type="button" onClick={() => deleteUser(index)}>Delete</button>
+                    <button type="button" onClick={() => editUser(id)}>Edit</button>
                   </td>
                 </tr>
               ))
