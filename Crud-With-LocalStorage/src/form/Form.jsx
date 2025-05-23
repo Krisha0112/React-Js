@@ -67,10 +67,6 @@ function Form() {
       localStorage.setItem('users', JSON.stringify(oldrecord));
       setAllRecord(oldrecord);
     }
-
-
-
-
     setFormInput({
       userid: "",
       username: "",

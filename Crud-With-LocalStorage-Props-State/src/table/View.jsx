@@ -14,6 +14,7 @@ function View() {
             <th>Gender</th>
             <th>Courses</th>
             <th>City</th>
+            <th>Action</th>
           </tr>
         </thead>
       </table>
