@@ -1,0 +1,88 @@
+.Card4 {
+    background-color: white;
+}
+
+.Card4 img {
+    width: 225px;
+    border-radius: 10px;
+    display: block;
+    margin: 15px auto;
+    position: relative;
+}
+
+.Card4 .lock {
+    position: absolute;
+    top: 50%;
+    left: 41%;
+    width: 35px;
+    line-height: 35px;
+    background-color: #F7F7F9;
+    border-radius: 50%;
+    text-align: center;
+    color: #64b496;
+    border:1px solid #e9e9e9
+}
+
+.Card4-content a {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    transition: 0.5s;
+
+    color: #777;
+}
+.Card4-content a:hover{
+    color: #64b496;
+
+}
+
+.Card4-content .a a {
+    color: black;
+    font-size: 17px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.Card4-content .a a:hover {
+    color: #64b496;
+
+}
+
+.Card4-content .cc {
+    text-align: center;
+    justify-content: center;
+}
+
+.Card4-content .cc span {
+    color: #64b496;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+.Card4-content .star {
+    color: #f5885f;
+    font-size: 19px;
+}
+
+.Card4-content .star p {
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.Card4-content .cc p {
+    font-size: 16px;
+    text-decoration: line-through;
+    align-items: center;
+    margin-left: 15px;
+    margin-top: 4px;
+    color: #777;
+}
+.img-content img{
+    width: 430px;
+    height: 395px;
+    object-fit:cover;
+    display: block;
+    margin-top: 50px;
+}

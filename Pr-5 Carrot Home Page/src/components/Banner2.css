@@ -1,0 +1,91 @@
+.Banner {
+    width: 100%;
+    background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836') no-repeat center center;
+    background-size: cover;
+    padding: 80px 20px;
+    margin: 60px 0; /* ✅ Top & Bottom Margin */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Banner {
+    padding: 60px 20px; /* ✅ Top & bottom spacing */
+    display: flex;
+    justify-content: flex-start; /* ✅ Align to left */
+    align-items: center;
+    background-color: #f7f7f7; /* Optional background */
+}
+
+.custom-card {
+    width: 29rem; /* ✅ Fixed width */
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    text-align: left; /* ✅ Align content to left */
+}
+
+.dd p {
+    font-size: 28px;
+    font-weight: bold;
+    color: #27ae60;
+    margin-bottom: 15px;
+}
+
+.dd p span {
+    font-size: 40px;
+    color: #e74c3c;
+}
+
+.content {
+    font-size: 24px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-top: 20px;
+}
+
+.content small {
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    color: #888;
+}
+
+/* 
+.custom-card {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    text-align: center;
+/* } */
+/* 
+.dd p {
+    font-size: 28px;
+    font-weight: bold;
+    color: #27ae60;
+    margin-bottom: 15px;
+}
+
+.dd p span {
+    font-size: 40px;
+    color: #e74c3c;
+}  */
+
+/* .content {
+    font-size: 24px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-top: 20px;
+} */
+/* 
+.content small {
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    color: #888;
+} */
