@@ -5,7 +5,7 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import './Card.css'
 
 
-const CardX = () => {
+const Card1 = () => {
     return (
         <div className='d-flex align-items-center justify-content-center'>
             <Card className='card'>
@@ -51,4 +51,4 @@ const CardX = () => {
     )
 }
 
-export default CardX
+export default Card1

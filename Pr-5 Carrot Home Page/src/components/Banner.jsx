@@ -24,7 +24,7 @@ const Banner = () => {
                                     </div>
                                 </div>
                                 <div className="col-md-6 text-center">
-                                    <img src='./src/assets/img.png' style={{ width: '500px' }} alt="Fruit" className="img-fluid" />
+                                    <img src='./src/assets/fruit.png' style={{ width: '500px' }} alt="Fruit" className="img-fluid" />
                                 </div>
                             </div>
                         </div>
