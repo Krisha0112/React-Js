@@ -1,0 +1,23 @@
+.card-2 {
+    display: block;
+    margin-left: 100px;
+
+}
+.card{
+    background-color: #77777714;
+}
+.card-2 h4 {
+    font-weight: 600;
+    text-align: center;
+}
+
+.card-2 .icon {
+    color: #64b496;
+    font-size: 40px;
+}
+
+.card-2 p {
+    text-align:  center;
+    color: #777;
+    font-size: 15px;
+}
