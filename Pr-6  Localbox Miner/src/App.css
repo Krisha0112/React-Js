@@ -1,0 +1,152 @@
+/* Reset and Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(rgb(18 18 18 / 27%), rgb(18 18 18 / 51%)),
+    url('https://png.pngtree.com/thumb_back/fh260/background/20230527/pngtree-black-gym-with-heavy-weights-image_2687614.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #e0e0e0;
+  padding: 30px;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: #383838b0;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 255, 100, 0.15);
+}
+
+/* Header */
+h2 {
+  text-align: center;
+  color: #e7e7e7;
+  text-shadow: 0 0 5px #848789;
+  margin-bottom: 25px;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #c0c0c0;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+  padding: 10px 12px;
+  background-color: #292929;
+  color: #f1f1f1;
+  border: 1px solid #555;
+  border-radius: 6px;
+  transition: 0.3s ease-in-out;
+}
+
+input:focus,
+select:focus {
+  border-color: #848789;
+  outline: none;
+  background-color: #333;
+}
+
+/* Submit Button */
+button[type="submit"] {
+  padding: 12px;
+  background-color: #7a7a7a;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  margin-top: 8px;
+}
+
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 14px 12px;
+  text-align: left;
+  border-bottom: 1px solid #2d2d2d;
+}
+
+th {
+  background-color: #232323;
+  color: #e7e7e7;
+}
+
+tbody tr {
+  background-color: #1b1b1b;
+  transition: 0.2s;
+}
+
+tbody tr:hover {
+  background-color: #2b2b2b;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.action-buttons button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.action-buttons button:hover {
+  transform: scale(1.05);
+}
+
+.action-buttons button:first-child {
+  background-color: #e74c3c;
+}
+
+.action-buttons button:first-child:hover {
+  background-color: #ff6b61;
+  box-shadow: 0 0 6px #ff6b61aa;
+}
+
+.action-buttons button:last-child {
+  background-color: #2980b9;
+}
+
+.action-buttons button:last-child:hover {
+  background-color: #3498db;
+  box-shadow: 0 0 6px #3498db99;
+}
