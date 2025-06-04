@@ -80,7 +80,7 @@ function App() {
         <div className="form-group">
           <label>Plan Type:</label>
           <select name="plan" value={formInput.plan} onChange={changeInput} required>
-            <option value="">-- Select Plan --</option>
+            <option value="">- - - Select Plan - - -</option>
             <option value="Yoga">Yoga</option>
             <option value="Cardio">Cardio</option>
             <option value="Weight Training">Weight Training</option>
