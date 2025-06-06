@@ -162,3 +162,21 @@ tbody tr:hover {
   background-color: #3498db;
   box-shadow: 0 0 6px #3498db99;
 }
+
+/* Add New Client Button */
+.add-client-btn {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #7a7a7a;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s, box-shadow 0.3s;
+  box-shadow: 0 0 8px rgba(39, 174, 96, 0.3);
+}

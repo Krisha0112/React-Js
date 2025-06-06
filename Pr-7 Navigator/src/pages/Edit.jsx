@@ -12,19 +12,19 @@ function Edit() {
     schedule: ''
   });
 
-  const [allRecord, setAllRecord] = useState(JSON.parse(localStorage.getItem('clients')) || [])
+  const [allRecord, setAllRecord] = useState(JSON.parse(localStorage.getItem('clients')) || []);
 
   useEffect(() => { 
-    let single = allRecord.find(val => val.id == editid)
-    setFormData(single)
-  }, [editid])
+    const single = allRecord.find(val => val.id == editid);
+      setFormData(single);
+  }, [editid, allRecord]);
 
   const changeInput = (e) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
       [name]: value
-    })
+    });
   }
 
   const handleSubmit = (e) => {
@@ -32,16 +32,16 @@ function Edit() {
 
     const up = allRecord.map((val) => {
       if (val.id == editid) {
-        return formData
+        return formData;
       }
       return val;
-    })
-    localStorage.setItem('users', JSON.stringify(up));
+    });
+    localStorage.setItem('clients', JSON.stringify(up));
     setAllRecord(up);
-    alert("Record Updated");
-    navigate('/')
-  }
 
+    alert("Record Updated");
+    navigate('/');
+  }
 
   return (
     <div className="container">

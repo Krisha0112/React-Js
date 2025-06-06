@@ -12,7 +12,7 @@ function View() {
 
   const deleteUser = (id) => {
     let deletedata = allRecord.filter(val => val.id != id);
-    localStorage.setItem('users', JSON.stringify(deletedata));
+    localStorage.setItem('clients', JSON.stringify(deletedata));
     setAllRecord(deletedata);
     alert("Record Successfully Deleted......!")
   };
@@ -24,7 +24,7 @@ function View() {
   return (
     <div className="container">
       <h2>Fitness Program Tracker</h2>
-      <Link to="/add"><button>Add New Client</button></Link>
+      <Link to="/add"><button className="add-client-btn">Add New Client</button></Link>
       <table border={1}>
         <thead>
           <tr>
