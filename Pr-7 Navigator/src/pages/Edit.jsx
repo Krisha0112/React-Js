@@ -12,7 +12,7 @@ function Edit() {
     schedule: ''
   });
 
-  const [allRecord, setAllRecord] = useState(JSON.parse(localStorage.getItem('users')) || [])
+  const [allRecord, setAllRecord] = useState(JSON.parse(localStorage.getItem('clients')) || [])
 
   useEffect(() => { 
     let single = allRecord.find(val => val.id == editid)
@@ -52,6 +52,7 @@ function Edit() {
           <input
             type="text"
             name="clientName"
+            placeholder='Enter Client Name.....!'
             value={formData.clientName}
             onChange={changeInput}
             required
@@ -80,6 +81,7 @@ function Edit() {
             type="text"
             name="trainer"
             value={formData.trainer}
+            placeholder='Enter Trainer Name'
             onChange={changeInput}
             required
           />
