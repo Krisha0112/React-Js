@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
+import './App.css';
 import View from "./pages/View"
 import Add from "./pages/Add"
 import Edit from "./pages/Edit"
@@ -11,7 +12,7 @@ function App() {
     <Routes>
       <Route path="/" element={<View/>} />
       <Route path="/add" element={<Add/>} />
-      <Route path="/edit" element={<Edit/>} />
+      <Route path="/edit/:editid" element={<Edit/>} />
     </Routes>
     </BrowserRouter>
    </div>
