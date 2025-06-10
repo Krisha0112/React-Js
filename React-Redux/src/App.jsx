@@ -1,8 +1,17 @@
+import { BrowserRouter, Route, Routes } from "react-router"
+import View from "./crud/View"
+import Add from "./crud/Add"
+
 function App() {
 
   return (
     <>
-     <h1>hello</h1>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<View />}/>
+          <Route path="/add" element={<Add />}/>
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
