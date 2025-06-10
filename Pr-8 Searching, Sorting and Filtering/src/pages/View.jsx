@@ -86,6 +86,15 @@ function View() {
     navigate(`/edit/${id}`);
   };
 
+  const resetFilters = () => {
+    setClientNameSearch('');
+    setPlanSearch('');
+    setTrainerSearch('');
+    setSelectedPlan('');
+    setSortConfig({ key: '', direction: 'asc' });
+    setFilteredRecords(allRecord);
+  };
+
   return (
     <div className="container">
       <h2>Fitness Program Tracker</h2>
@@ -117,6 +126,9 @@ function View() {
             onChange={handleTrainerSearch}
           />
         </div>
+        <div className="reset-button">
+          <button onClick={resetFilters}>Reset</button>
+        </div>
       </div>
 
       <div className="plan-filter">
@@ -124,9 +136,9 @@ function View() {
         <select value={selectedPlan} onChange={(e) => setSelectedPlan(e.target.value)}>
           <option value="">All Plans</option>
           <option value="Yoga">Yoga</option>
-            <option value="Cardio">Cardio</option>
-            <option value="Weight Training">Weight Training</option>
-            <option value="Zumba">Zumba</option>
+          <option value="Cardio">Cardio</option>
+          <option value="Weight Training">Weight Training</option>
+          <option value="Zumba">Zumba</option>
         </select>
       </div>
 

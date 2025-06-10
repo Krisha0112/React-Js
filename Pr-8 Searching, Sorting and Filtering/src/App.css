@@ -184,16 +184,16 @@ tbody tr:hover {
 
 .search-filter {
   display: flex;
-  gap: 15px; /* Adds space between each search input */
+  gap: 15px;
   margin-bottom: 20px;
 }
 
 .search-item {
-  flex: 1; /* Makes each search field equal width */
+  flex: 1;
 }
 
 .search-item input {
-  width: 100%; /* Ensures full width */
+  width: 100%; 
   padding: 8px;
   margin: 5px 0;
   border-radius: 4px;
@@ -214,4 +214,30 @@ tbody tr:hover {
   padding: 8px;
   border-radius: 4px;
   border: 1px solid #ccc;
+}
+
+
+.search-filter {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.search-item input {
+  padding: 8px;
+  width: 200px;
+}
+
+.reset-button button {
+  padding: 8px 15px;
+  background-color: #ffeb3b;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px; 
+}
+
+.reset-button button:hover {
+  background-color: #fbc02d; 
 }
