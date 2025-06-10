@@ -126,20 +126,22 @@ function View() {
             onChange={handleTrainerSearch}
           />
         </div>
-        <div className="reset-button">
-          <button onClick={resetFilters}>Reset</button>
-        </div>
       </div>
 
       <div className="plan-filter">
-        <label>Filter by Plan: </label>
-        <select value={selectedPlan} onChange={(e) => setSelectedPlan(e.target.value)}>
-          <option value="">All Plans</option>
-          <option value="Yoga">Yoga</option>
-          <option value="Cardio">Cardio</option>
-          <option value="Weight Training">Weight Training</option>
-          <option value="Zumba">Zumba</option>
-        </select>
+        <div className="filter-container">
+          <label>Filter by Plan: </label>
+          <select value={selectedPlan} onChange={(e) => setSelectedPlan(e.target.value)}>
+            <option value="">All Plans</option>
+            <option value="Yoga">Yoga</option>
+            <option value="Cardio">Cardio</option>
+            <option value="Weight Training">Weight Training</option>
+            <option value="Zumba">Zumba</option>
+          </select>
+
+          {/* Reset button placed next to the "All Plans" option */}
+          <button onClick={resetFilters} className="reset-button">Reset</button>
+        </div>
       </div>
 
       <table border={1}>
