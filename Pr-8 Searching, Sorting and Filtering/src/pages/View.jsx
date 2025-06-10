@@ -124,8 +124,9 @@ function View() {
         <select value={selectedPlan} onChange={(e) => setSelectedPlan(e.target.value)}>
           <option value="">All Plans</option>
           <option value="Yoga">Yoga</option>
-          <option value="Strength">Strength</option>
-          <option value="Cardio">Cardio</option>
+            <option value="Cardio">Cardio</option>
+            <option value="Weight Training">Weight Training</option>
+            <option value="Zumba">Zumba</option>
         </select>
       </div>
 
