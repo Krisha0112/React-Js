@@ -138,8 +138,7 @@ function View() {
             <option value="Weight Training">Weight Training</option>
             <option value="Zumba">Zumba</option>
           </select>
-
-          {/* Reset button placed next to the "All Plans" option */}
+          
           <button onClick={resetFilters} className="reset-button">Reset</button>
         </div>
       </div>
