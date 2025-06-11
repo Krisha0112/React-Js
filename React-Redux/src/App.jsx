@@ -1,18 +1,23 @@
-import { BrowserRouter, Route, Routes } from "react-router"
-import View from "./crud/View"
-import Add from "./crud/Add"
+import React from 'react'
+import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Counter from './Page/Counter'
+import Add from './Page/Add'
+import View from './Page/View'
+import Edit from './Page/Edit'
 
-function App() {
-
+const App = () => {
   return (
-    <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<View />}/>
-          <Route path="/add" element={<Add />}/>
-        </Routes>
-      </BrowserRouter>
-    </>
+
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Counter />} />
+        <Route path='/add' element={<Add />} />
+        <Route path='/view' element={<View />} />
+        <Route path='/edit/:id' element={<Edit />} />
+      </Routes>
+    </BrowserRouter>
+
   )
 }
 
