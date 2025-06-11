@@ -38,7 +38,7 @@ const Edit = () => {
         event.preventDefault();
 
         const updatedUser = {
-            id: single.id, // keep original ID
+            id: single.id, 
             ...formInput
         };
 
