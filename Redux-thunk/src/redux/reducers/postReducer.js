@@ -1,14 +1,17 @@
 let initialState = {
     post : []
 }
-const postReducre = (state = initialState.action) => {
+const postReducer = (state = initialState, action) => {
     switch(action.type) {
         case 'getpost' :
-            return state
+            return {
+                ...state
+                posts = action.payload
+            }
 
         default: 
             return state
     }
 }
 
-export default postReducre
+export default postReducer
