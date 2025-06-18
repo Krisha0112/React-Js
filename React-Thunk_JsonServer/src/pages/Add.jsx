@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { Link, useNavigate } from 'react-router-dom';
+import ADD_USER from '../redux/action/crudAction'
 
 function Add() {
+
+  const dispatch = useDispatch()
+  const navigate = useNavigate()
   const [forminput, setFormInput] = useState({
     name: '',
     email: '',
@@ -18,11 +23,10 @@ function Add() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    let obj = {
-      userid: Math.floor(Math.random() * 10000),
-      ...forminput,
-    };
-    console.log(obj);
+    console.log(forminput);
+    
+    dispatch(ADD_USER(forminput))
+    navigate('/')
     alert('Form Submitted!');
   };
 
