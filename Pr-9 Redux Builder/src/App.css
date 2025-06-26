@@ -1,0 +1,102 @@
+/* app.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f1f3f4;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.keep-container {
+  margin-top: 40px;
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+}
+
+.keep-title {
+  margin: 0 0 20px 0;
+  text-align: center;
+  color: #202124;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.keep-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.keep-form input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.keep-form input:focus {
+  border-color: #5f6368;
+}
+
+.keep-form button {
+  padding: 12px 20px;
+  border: none;
+  background-color: #1a73e8;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.keep-form button:hover {
+  background-color: #155ab6;
+}
+
+.keep-notes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.note-card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  position: relative;
+  word-wrap: break-word;
+}
+
+.note-card p {
+  margin: 0 0 10px;
+  color: #333;
+  font-size: 15px;
+}
+
+.note-card button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #d93025;
+}
+
+.note-card button:hover {
+  color: #a80000;
+}

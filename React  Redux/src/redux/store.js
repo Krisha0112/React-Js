@@ -1,6 +1,5 @@
+
 import { createStore } from "redux";
-import rootReducer from "./reducers/indexReducer";
-
-let store = createStore(rootReducer)
-
+import keepreducer from "./reducer/indexkeep";
+const store = createStore(keepreducer)
 export default store

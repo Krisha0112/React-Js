@@ -1,9 +1,11 @@
 import { getDatabase, onValue, ref, remove } from "firebase/database";
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { app } from "../Firebase";
 
 function View() {
+
+    const navigate = useNavigate()
 
     const [alluser, setAllUSer] = useState("");
  
@@ -33,8 +35,13 @@ function View() {
        })
     } 
 
+    const editUser = (id, name, age) => {
+        let data = {id, name, age};
+        navigate(`/edit`,{state:data})
+    }
+
   return (
-    <div align="center">
+    <div className="container" align="center">
       <h1>View User</h1>
       
       <table border={1}>
@@ -55,7 +62,8 @@ function View() {
                             <td>{value.name}</td>
                             <td>{value.age}</td>
                             <td>
-                                <button onClick={ () => deleteUser(key)}>Delete</button>
+                                <button className="delete" onClick={ () => deleteUser(key)}>Delete</button>
+                                <button className="edit" onClick={ () => editUser(key, value.name, value.age)}>Edit</button>
                             </td>
                         </tr>
                     )

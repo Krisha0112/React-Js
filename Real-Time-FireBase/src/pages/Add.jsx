@@ -44,7 +44,7 @@ function Add() {
   };
 
   return (
-    <div align="center">
+    <div className="container" align="center">
       <h1>Add User</h1>
       <form onSubmit={handleSubmit}>
         <table border={1}>

@@ -1,24 +1,17 @@
-import React from 'react'
-import './App.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Counter from './Page/Counter'
-import Add from './Page/Add'
-import View from './Page/View'
-import Edit from './Page/Edit'
+import React from "react";
+import { Provider } from "react-redux";
+import store from "./redux/store";
+import Keep from "./Pages/Keep";
+import "./styles.css";
 
 const App = () => {
   return (
+    <Provider store={store}>
+      <div className="app-card">
+        <Keep />
+      </div>
+    </Provider>
+  );
+};
 
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Counter />} />
-        <Route path='/add' element={<Add />} />
-        <Route path='/view' element={<View />} />
-        <Route path='/edit/:id' element={<Edit />} />
-      </Routes>
-    </BrowserRouter>
-
-  )
-}
-
-export default App
+export default App;
