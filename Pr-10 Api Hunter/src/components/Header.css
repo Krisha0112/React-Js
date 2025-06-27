@@ -1,0 +1,42 @@
+.header {
+  background-color: #121212;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #333;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2rem;
+  margin-right: 0.5rem;
+}
+
+.branding h1 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.branding p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #bbb;
+}
+
+.nav-links a {
+  color: #ccc;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #00bcd4;
+}
